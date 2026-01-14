@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>id card </title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color:aliceblue;
+        }
+        form {
+            background-color: white;
+            display:flex;
+            justify-content: center;
+            border: 2px solid black;
+            margin: 122px 391px 103px 509px;
+            width: 400px;
+            height: 500px;
+        }
+        h3{
+            text-align: center;
+            font-size: 25px;
+            margin: 20px;
+        }
+        input{
+            width: 300px;
+            display: block;
+            padding: 5px;
+            margin-bottom: 20px;
+            border: 1px solid black;
+        }
+        label{
+            margin-top: 10px;
+        }
+        button{
+            background-color: blue;
+            color:black;
+            text-align: center;
+            margin-left: 80px;
+            padding: 5px;
+
+        }
+    </style>
+</head>
+
+<body class="body">
+    <form>
+        <div>
+            <h3>Student ID Card Maker</h3>
+            <div>
+                <label class="lable">Background Image:</label>
+                <input class="input" type="file" id="bgImage" accept="image/*" required>
+            </div>
+            <div>
+                <label class="lable" for="name"> Name:</label>
+                <input class="input" type="text" id="name">
+            </div>
+            <div>
+                <label class="lable" for="student id"> student ID:</label>
+                <input class="input" type="text" id="student id">
+            </div>
+            <div>
+                <label class="lable" for="Department"> Department:</label>
+                <input class="input" type="text" id="Department">
+            </div>
+            <div>
+                <label class="lable">photo:</label>
+                <input class="input" type="file" id="photo" accept="image/*" required>
+            </div>
+            <div class="button">
+                <button>Generate id Card</button>
+
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
