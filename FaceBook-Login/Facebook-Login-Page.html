@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook login</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        /* Facebook official background color */
+        background-color: #f0f2f5;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .contaner {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        max-width: 1000px;
+      }
+
+      form {
+        width: 400px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow:
+          0 2px 4px rgba(0, 0, 0, 0.1),
+          0 8px 16px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      /* Input hover and focus effects */
+      input {
+        height: 45px;
+        width: 90%;
+        margin: 10px 0;
+        padding-left: 15px;
+        border-radius: 6px;
+        border: 1px solid #dddfe2;
+        font-size: 16px;
+        transition:
+          border 0.3s,
+          box-shadow 0.3s;
+      }
+
+      input:hover {
+        border-color: #1877f2;
+      }
+
+      input:focus {
+        outline: none;
+        border-color: #1877f2;
+        box-shadow: 0 0 0 2px #e7f3ff;
+      }
+
+      /* Login Button with Hover */
+      .log-in-btn {
+        color: #fff;
+        background-color: #1877f2; /* FB Blue */
+        width: 95%;
+        height: 48px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 6px;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .log-in-btn:hover {
+        background-color: #166fe5;
+      }
+
+      /* Create Account Button with Hover */
+      .log-in-btn-2 {
+        color: #fff;
+        background-color: #42b72a; /* FB Green */
+        width: 60%;
+        height: 48px;
+        margin-top: 20px;
+        font-size: 17px;
+        font-weight: bold;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .log-in-btn-2:hover {
+        background-color: #36a420;
+      }
+
+      .sub-contaner {
+        width: 500px;
+        text-align: left;
+      }
+
+      .sub-contaner h3 {
+        font-size: 26px;
+        font-weight: normal;
+        line-height: 32px;
+        margin-left: 10px;
+      }
+
+      img {
+        margin-left: -15px;
+      }
+
+      span {
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      span:hover {
+        text-decoration: underline;
+      }
+
+      a {
+        text-decoration: none;
+        color: #1877f2;
+        font-size: 14px;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      p {
+        margin: 15px 0;
+        font-size: 14px;
+      }
+
+      hr {
+        width: 95%;
+        border: 0;
+        border-top: 1px solid #dadde1;
+        margin: 20px 0;
+      }
+
+      /* Icon styling */
+      .icon-align {
+        vertical-align: middle;
+        font-size: 18px;
+        margin-right: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="contaner">
+      <div class="sub-contaner">
+        <img
+          src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg"
+          alt="Facebook"
+          height="106px"
+        />
+        <h3>
+          Facebook helps you connect and share with the people in your life.
+        </h3>
+      </div>
+
+      <div>
+        <form action="#">
+          <input type="text" placeholder="Email address or Phone number" />
+          <input type="password" placeholder="Password" required />
+
+          <button type="submit" class="log-in-btn">Log In</button>
+
+          <a href="#"><p>Forgotten password?</p></a>
+          <hr />
+
+          <button type="button" class="log-in-btn-2">Create new account</button>
+        </form>
+        <p><span>Create a Page</span> for a celebrity, brand or business.</p>
+      </div>
+    </div>
+  </body>
+</html>
