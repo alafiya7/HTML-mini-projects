@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(240, 208, 239); 
+}
+
+section h2 {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 500;
+    margin-top: 50px;
+}
+
+.Testimonial-Cards {
+    height: 500px;
+    width: 100%;
+    margin: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Card {
+    border: 2px solid black;
+    height: 150px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+.Card h3 {
+    text-align: center;
+}
+
+.Card ,span {
+    text-align: center;
+    font-style: italic;
+}
+
+.Card, .Testimonial-text {
+    
+}
